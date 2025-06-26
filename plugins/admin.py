@@ -1,4 +1,5 @@
 from pyrogram import Client, filters
+from config import OWNER_ID
 from pyrogram.types import Message
 from database import ban_user, unban_user, count_users, count_banned, count_token_users
 import os
