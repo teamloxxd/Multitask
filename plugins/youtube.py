@@ -31,7 +31,7 @@ async def youtube_handler(bot, message: Message):
         return await message.reply("⚠️ No downloadable formats found.")
 
     await message.reply(
-        f"🎬 **{title}**
-Select quality below:",
-        reply_markup=InlineKeyboardMarkup(buttons)
-    )
+    f"""🎬 **{title}**
+📥 Select quality from below:""",
+    reply_markup=InlineKeyboardMarkup(buttons)
+)
